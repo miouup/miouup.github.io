@@ -1,4 +1,4 @@
-var birthdayString = "21.04.2005"; // Hier das Geburtsdatum im Format "dd.MM.yyyy" angeben
+var birthdayString = "02.06.2005"; // Hier das Geburtsdatum im Format "dd.MM.yyyy" angeben
 
 function addLeadingZero(number) {
   if (number < 10) {
