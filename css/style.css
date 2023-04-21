@@ -4,7 +4,6 @@
     --background-color: #CDC7ED;
     --big_card-color: #9058F7;
     --little_card-color: #B98EFA;
-    --location_text-color: #00AACC;
     --countdown_second_text-color: #CECECE;
     --social_media_text-color: #DBF5FF;
     --footer-color: #5500F4;
@@ -304,4 +303,17 @@ body {
   .social-icons a i {
      font-size: 20px;
   }
+}
+
+
+.centerBackButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centerLocationText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
