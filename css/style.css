@@ -1,62 +1,69 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css');
-*{
-    --text-color: #ffffff;
-    --background-color: #CDC7ED;
-    --big_card-color: #9058F7;
-    --little_card-color: #B98EFA;
-    --countdown_second_text-color: #CECECE;
-    --social_media_text-color: #DBF5FF;
-    --footer-color: #5500F4;
+
+:root {
+  --text-color: #ffffff;
+  --background-color: #CDC7ED;
+  --big_card-color: #9058F7;
+  --little_card-color: #B98EFA;
+  --countdown_second_text-color: #CECECE;
+  --social_media_text-color: #DBF5FF;
+  --footer-color: #5500F4;
 }
+
 @font-face {
-    font-family: 'Mio'; /* Gewünschter Name */
-    src: url('/VarelaRound-Regular.ttf');
+  font-family: 'Mio';
+  src: url('/VarelaRound-Regular.ttf');
 }
+
 body {
-    background-color: var(--background-color);
-    font-family: Mio;
-    margin: 0;
-    padding: 0;
+  background-color: var(--background-color);
+  font-family: Mio;
+  margin: 0;
+  padding: 0;
 }
+
 .container {
-    background-color: var(--big_card-color);
-    border-radius: 40px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin: 50px auto;
-    max-width: 800px;
-    padding-top: 50px;
-    padding-bottom: 2px;
-    text-align: center;
-    color: var(--text-color);
+  background-color: var(--big_card-color);
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 50px auto;
+  max-width: 800px;
+  padding-top: 50px;
+  padding-bottom: 2px;
+  text-align: center;
+  color: var(--text-color);
 }
+
 .container h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
 }
+
 .container p {
-    font-size: 1.2em;
-    line-height: 1.5;
-    margin-bottom: 30px;
+  font-size: 1.2em;
+  line-height: 1.5;
+  margin-bottom: 30px;
 }
+
 .container a {
-    background-color: var(--big_card-color);
-    border-radius: 5px;
-    color: #fff;
-    display: inline-block;
-    font-size: 1.2em;
-    padding: 10px 20px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-      
+  background-color: var(--big_card-color);
+  border-radius: 5px;
+  color: #fff;
+  display: inline-block;
+  font-size: 1.2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
 }
+
 .logo {
-    border-radius: 100%;
-    -webkit-border-radius: 100%;
-    -moz-border-radius: 100%;
-    width: 20%;
-    animation: pulse 2s ease-in-out infinite;
-    
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  width: 20%;
+  animation: pulse 2s ease-in-out infinite;
 }
+
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -69,251 +76,334 @@ body {
   }
 }
 
-.about-me{
-    background-color: var(--little_card-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin: 20px auto;
-    max-width: 700px;
-    padding:5px;
-    text-align: center;
+.about-me {
+  background-color: var(--little_card-color);
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 5px;
+  text-align: center;
 }
 
 .about-me-line {
-    width: 100%;
-    height: 1px;
-    background-color: var(--big_card-color);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    display: flex;
-  }
+  width: 100%;
+  height: 1px;
+  background-color: var(--big_card-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
 .birthday {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--little_card-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin: 20px auto;
-    max-width: 700px;
-    padding:5px;
-    text-align: center;
-  }
-  
-  .birthday-image {
-    width: 10%;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .birthday-image img {
-    width: 100%;
-  }
-  
-  .birthday-text {
-    text-align: center;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--little_card-color);
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 5px;
+  text-align: center;
+}
+
+.birthday-image {
+  width: 10%;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.birthday-image img {
+  width: 100%;
+}
+
+.birthday-text
+{
+  text-align: center;
+  margin-top: 10px;
   }
   
   .birthday-text h2 {
-    margin: 0;
+  margin: 0;
   }
   
   .birthday-text p {
-    margin: 0;
+  margin: 0;
   }
   
   .birthday-line {
-    width: 80%;
-    height: 1px;
-    color: var(--big_card-color);
-    background-color: var(--big_card-color);
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: 80%;
+  height: 1px;
+  color: var(--big_card-color);
+  background-color: var(--big_card-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
   }
+  
   .countdown {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    }
-    
-    .countdown-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 10px;
-    }
-    
-    .countdown-number {
-    font-size: 48px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    }
-    
-    .countdown-label {
-    font-size: 14px;
-    }
-    
-  .working{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--little_card-color);
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-    margin: 20px auto;
-    max-width: 700px;
-    padding:5px;
-    text-align: center;
-}
-.working a {
-    text-decoration: none; 
-    color: black; 
-    background-color: transparent;
-}
-.working a:hover {
-    background-color: transparent;
-}
-.working-image {
-    width: 20%;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  
+  .countdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+  }
+  
+  .countdown-number {
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 10vw;
+  }
+  
+  .countdown-label {
+  font-size: 14px;
+  }
+  
+  .working {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--little_card-color);
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 5px;
+  text-align: center;
+  }
+  
+  .working a {
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+  }
+  
+  .working a:hover {
+  background-color: transparent;
+  }
+  
+  .working-image {
+  width: 20%;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
   }
   
   .working-image img {
-    width: 100%;
+  width: 100%;
   }
+  
   .working-line {
-    width: 80%;
-    height: 1px;
-    background-color: var(--big_card-color);
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: 80%;
+  height: 1px;
+  background-color: var(--big_card-color);
+  margin-top: 20px;
+  margin-bottom: 20px;
   }
   
   .social-icons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
   }
   
   .row {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
   }
   
   .row + .row {
-    margin-top: 20px;
+  margin-top: 20px;
   }
   
   .social-icons a {
-    margin: 10px;
+  margin: 10px;
   }
   
   .icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 70px;
-    height: 70px;
-    margin: 10px;
-    border-radius: 50%;
-    background-color: transparent;
-    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-    overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+  overflow: hidden;
   }
   
   .icon:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-    z-index: 1;
+  cursor: pointer;
+  transform: scale(1.2);
+  z-index: 1;
   }
   
   .github {
-    color: #fff;
+  color: #fff;
   }
   
   .tiktok {
-    color: #fff;
+  color: #fff;
   }
   
   .instagram {
-    color: #fff;
+  color: #fff;
   }
   
   .discord {
-    color: #fff;
+  color: #fff;
   }
   
   .pinterest {
-    color: #fff;
+  color: #fff;
   }
   
   .twitter {
-    color: #fff;
+  color: #fff;
   }
   
   .github:hover {
-    background-color: #24292e;
+  background-color: #24292e;
   }
   
   .tiktok:hover {
-    background-color: #444444;
+  background-color: #444444;
   }
   
   .instagram:hover {
-    background-color: #E1306C;
+  background-color: #E1306C;
   }
   
   .discord:hover {
-    background-color: #7289DA;
+  background-color: #7289DA;
   }
   
   .pinterest:hover {
-    background-color: #BD081C;
+  background-color: #BD081C;
   }
   
   .twitter:hover {
-    background-color: #1DA1F2;
+  background-color: #1DA1F2;
   }
+  
   #logo {
-    width: 100%;
-    max-width: 500px; /* Set the maximum width of the image */
- }
- 
- #logo {
   width: 100%;
-  max-width: 500px; /* Set the maximum width of the image */
-}
-@media only screen and (max-width: 767px) {
-  .social-icons a {
-     margin: 0 5px 10px;
-     width: 50px;
-     height: 50px;
-     line-height: 50px;
+  max-width: 500px;
   }
 
-  .social-icons a i {
-     font-size: 20px;
-  }
+ .spotify-module {
+  background-color: var(--little_card-color);
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  max-width: 700px;
+  padding: 5px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
 }
 
-
-.centerBackButton {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.spotify-wrapper {
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
 }
 
-.centerLocationText {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.spotify-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
+
+  @media only screen and (max-width: 767px) {
+    .social-icons a {
+    margin: 0 5px 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    }
+    
+    .social-icons a i {
+    font-size: 20px;
+    }
+   
+    .spotify-module {
+      margin: 10px auto;
+      max-width: 100%;
+    }
+    }
+    
+    .centerBackButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .centerLocationText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    /* Responsive styles */
+    
+    @media only screen and (max-width: 600px) {
+      .container {
+        border-radius: 20px;
+        margin: 20px;
+        padding: 20px;
+      }
+      
+      .container h1 {
+        font-size: 1.8em;
+      }
+      
+      .container p {
+        font-size: 1em;
+        margin-bottom: 20px;
+      }
+      
+      .about-me,
+      .birthday,
+      .working {
+        border-radius: 12px;
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .countdown-number {
+        font-size: 5vw;
+      }
+      
+      .working-image {
+        width: 30%;
+      }
+      
+      .countdown-item {
+        margin: 0 5px;
+      }
+      
+      .spotify-module {
+        margin: 10px;
+      }
+    }
+
+    @media only screen and (min-width: 1200px) {
+      .countdown-number {
+        font-size: 48px;
+      }
+    }
